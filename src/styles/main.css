@@ -8,12 +8,18 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center; /* Centra horizontalmente */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra horizontalmente */
 }
 
 .navbar {
   background-color: #2e1868;
+  color: #fff;
   padding: 1em;
+  width: 120%; /* Ancho completo */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .navbar a {
@@ -29,24 +35,39 @@ body {
 .lista-libros {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente */
   gap: 20px;
+  width: 100%; /* Ancho completo */
   padding: 1em;
 }
 
 .lista-libros__item {
-  background-color: #a9a9a9;
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: calc(33.333% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(33.333% - 30px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.lista-libros__item:hover {
+  transform: translateY(-5px);
 }
 
 .lista-libros__item img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .lista-libros__item h3 {
   font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #2e1868;
+}
+
+.lista-libros__item p {
   margin: 0.5em 0;
 }
 
@@ -65,6 +86,7 @@ body {
   padding: 1em;
   text-align: center;
   margin-top: auto;
+  width: 120%; /* Ancho completo */
 }
 
 .buscar-libro {
@@ -100,3 +122,69 @@ body {
 .buscar-libro button:hover {
   background-color: #4c329e;
 }
+
+.alquiler,
+.extender-alquiler {
+  padding: 1em;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.alquiler h1,
+.extender-alquiler h1 {
+  color: #2e1868;
+}
+
+.alquiler p,
+.extender-alquiler p {
+  margin-bottom: 1em;
+}
+
+.alquiler button,
+.extender-alquiler button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #2e1868;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.alquiler button:hover,
+.extender-alquiler button:hover {
+  background-color: #4c329e;
+}
+
+.alquiler select,
+.extender-alquiler select,
+.alquiler input,
+.extender-alquiler input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .lista-libros__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .lista-libros__item {
+    width: calc(100% - 30px);
+  }
+
+  .buscar-libro,
+  .alquiler,
+  .extender-alquiler {
+    max-width: 100%;
+  }
+}
+
