@@ -1,70 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .navbar {
-    background-color: #2e1868;
-    padding: 1em;
-  }
-  
-  .navbar a {
-    color: #fff;
-    margin: 0 1em;
-    text-decoration: none;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  .lista-libros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 1em;
-  }
-  
-  .lista-libros__item {
-    background-color: #a9a9a9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: calc(33.333% - 20px);
-  }
-  
-  .lista-libros__item img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .lista-libros__item h3 {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-  }
-  
-  .detalle-libro {
-    padding: 1em;
-  }
-  
-  .detalle-libro img {
-    width: 100px;
-    height: auto;
-  }
-  
-  .footer {
-    background-color: #2e1868;
-    ;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    margin-top: auto;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #2e1868;
+  padding: 1em;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.lista-libros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1em;
+}
+
+.lista-libros__item {
+  background-color: #a9a9a9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: calc(33.333% - 20px);
+}
+
+.lista-libros__item img {
+  width: 100%;
+  height: auto;
+}
+
+.lista-libros__item h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.detalle-libro {
+  padding: 1em;
+}
+
+.detalle-libro img {
+  width: 100px;
+  height: auto;
+}
+
+.footer {
+  background-color: #2e1868;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.buscar-libro {
+  padding: 1em;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buscar-libro form {
+  display: flex;
+  gap: 10px;
+}
+
+.buscar-libro input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.buscar-libro button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #2e1868;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buscar-libro button:hover {
+  background-color: #4c329e;
+}
