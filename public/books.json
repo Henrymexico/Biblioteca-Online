@@ -34,6 +34,12 @@
     "titulo": "1984",
     "autor": "George Orwell",
     "descripcion": "La historia de Winston Smith, un hombre que lucha contra un gobierno totalitario en un futuro distópico."
-  } 
+  },
+  {"id":6,
+"titulo":"El retrato de Dorian Gray",
+"autor":"Oscar Wilde",
+"descripcion":"La historia de Dorian Gray, un joven que vende su alma para mantener su juventud y belleza eternas."
+}
+
   
 ]
